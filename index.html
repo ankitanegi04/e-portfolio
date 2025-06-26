@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankita Negi | e‑Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    :root {
+      --primary: #1e3655;
+      --accent: #d9e4ec;
+      --background: #f8fcfd;
+      --text: #333;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #d0e0f0, #f6f6f6);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin: 0;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .section-card {
+      background-color: var(--card-bg);
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+   h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  border-left: 6px solid #89CFF0;
+  padding-left: 10px;
+  }
+
+  p {
+  line-height: 1.8;
+  font-size: 1rem;
+  }
+
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #000;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 4rem;
+      }
+    }
+
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.gallery-item img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
+.gallery-item {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+ #topBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+#topBtn:hover {
+  background-color: #2c4a75;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+  <div><strong>Ankita Negi</strong></div>
+  <nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#objective">Objective</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#activities">Activities</a>
+  <a href="#mantra">Mantras</a>
+  <a href="#fun-facts">Fun Facts</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#feedback">PESE</a>
+  <a href="#feedback-pdf">Feedback PDF</a>
+  <a href="#interview">Interview</a>
+  <a href="#contact">Contact</a>
+  </nav>
+  </header>
+
+   <div class="hero" id="home">
+    <h2>Ankita Negi:E-Portfolio</h2>
+  </div>
+
+  <section id="about">
+  <div class="section-card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    
+    <div style="flex: 1 1 250px; text-align: center;">
+      <img src="picture1.jpg" alt="Ankita Negi" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;" />
+    </div>
+
+    <div style="flex: 2 1 500px;">
+      <h2>📇 About Me</h2>
+      <p>
+        Hello! I am <strong>Ankita Negi</strong>, a dedicated and enthusiastic Computer Science Engineering student at Graphic Era Hill University. I’m deeply interested in <strong>Artificial Intelligence</strong>, <strong>Compiler Design</strong>, and <strong>System Architecture</strong>. I love building innovative solutions to real-world problems and enjoy exploring emerging technologies like machine learning, cloud computing, and cybersecurity.
+      </p>
+      <p>
+        I have developed multiple technical projects that demonstrate my ability to think analytically, write clean code, and solve complex problems. I am passionate about learning and constantly seek opportunities to improve my skills—whether through online courses, project work, or research.
+      </p>
+      <p>
+        Outside academics, I enjoy participating in coding contests, contributing to open-source projects, and collaborating on interdisciplinary tech initiatives. I am also an effective communicator and team player. In my leisure time, I love cooking, listening to music, and exploring how technology can empower people.
+      </p>
+    </div>
+
+  </div>
+  </section>
+
+      <section id="objective">
+    <div class="section-card">
+      <h2>📍Career Objective</h2>
+      <p>
+        Aspiring Software Engineer with a strong interest in AI, system design, and compiler theory. Looking for an engineering position where I can apply my technical expertise and problem-solving skills to contribute to innovative solutions and impactful projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-card">
+      <h2>📝Academic Details</h2>
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>Degree/Exam</th>
+          <th>Institute</th>
+        </tr>
+        <tr>
+          <td>2022 - Present</td>
+          <td>B.Tech in Computer Science</td>
+          <td>Graphic Era Hill University, Dehradun</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Class XII (C.B.S.E)</td>
+          <td>Baluni Public School</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Class X (C.B.S.E)</td>
+          <td>Baluni Public School</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="feedback">
+  <div class="section-card">
+    <h2>🔖 PESE Feedback</h2>
+    <p><strong>I’m Ankita Negi from the E1 section, Roll No. 13, and this is my feedback on the PESE Lab conducted this semester under the guidance of <b>Dr. Anuva Ma’am</b>.</strong></p>
+
+    <p>
+      The sessions throughout the semester were not only informative but also very engaging. Ma’am's teaching style was unique—structured yet creative—and each class brought something new to the table. Her supportive and approachable nature made learning both effective and enjoyable.
+    </p>
+
+    <p>
+      The PESE lab wasn’t just about learning professional skills—it was about self-growth too. From group discussions to mock interviews, every activity was practical and helped us become more confident in real-life scenarios. One of my favorite parts was the last 10 minutes of each class, where we participated in small activities or interactive tasks. They added energy, boosted our confidence, and helped us connect with one another.
+    </p>
+
+    <p>
+      Personally, I’ve seen a big improvement in my confidence and communication. The assignments and assessments were thoughtfully designed, and Ma’am’s consistency and punctuality stood out. She explained even complex topics in a way that was simple and easy to understand.
+    </p>
+
+    <p>
+      Thank you, Ma’am, for your dedication and for making this semester truly enriching. Your efforts and encouragement have made a lasting impact on all of us.
+    </p>
+  </div>
+  </section>
+
+  <section>
+  <div class="section-card">
+  <h2>📖 What We Learned from PESE Lab</h2>
+  <p>
+    The PESE (Professional & Employability Skills Enhancement) Lab was not just another academic course—it was a powerful bridge between classroom learning and real-world professional expectations. Throughout this lab, we gained hands-on experience in refining our soft skills, shaping our personal brand, and preparing for the competitive professional world.
+  </p>
+  <ul>
+    <li><strong>Resume Building:</strong> Learned how to design effective, professional resumes that highlight our strengths clearly and concisely.</li>
+    <li><strong>Interview Preparation:</strong> Understood how to handle interviews confidently through mock sessions and peer feedback.</li>
+    <li><strong>Communication Skills:</strong> Enhanced our verbal and written communication through group discussions, presentations, and report writing.</li>
+    <li><strong>Teamwork & Collaboration:</strong> Worked in groups to simulate workplace collaboration and leadership dynamics.</li>
+    <li><strong>Professional Etiquette:</strong> Developed a strong sense of workplace behavior, punctuality, and presentation.</li>
+    <li><strong>Self-Awareness:</strong> Reflected on our strengths, weaknesses, and career goals through introspective exercises.</li>
+    <li><strong>Time & Stress Management:</strong> Practiced techniques for managing academic and professional tasks under deadlines.</li>
+  </ul>
+  <p>
+    Overall, the PESE Lab gave us a practical understanding of how to present ourselves professionally and confidently in interviews, workplaces, and public interactions. It was a stepping stone to becoming not just better students, but better professionals.
+  </p>
+  </div>
+  </section>
+
+  <section id="feedback">
+  <div class="section-card">
+    <h2>🎐PESE Feedback</h2>
+    <p>
+      I have shared my reflections and detailed insights about the PESE (Professional & Employability Skills Enhancement) course in the following feedback document.
+    </p>
+    <p>
+      <a href="https://drive.google.com/file/d/16RMWZhewq9_N94dBvQ_zwVQg4ewcAjDV/view?usp=drivesdk" target="_blank" style="color: var(--primary); font-weight: bold;">
+        👉 View PESE Feedback (PDF)
+      </a>
+    </p>
+  </div>
+  </section>
+
+  
+    <section id="gallery">
+  <div class="section-card">
+    <h2>🚂 Gallery: My Journey in Pictures</h2>
+    <div class="gallery-grid">
+       <div class="gallery-item">
+        <p>PESE Lab: E1 Section</p>
+        <img src="picture3.jpg" alt="PESE Lab">
+      </div>
+      <div class="gallery-item">
+        <p>Activity:</p>
+        <img src="picture2.jpg" alt="Group discussions">
+      </div>
+      <div class="gallery-item">
+        <p>Activity:</p>
+        <img src="picture4.jpg" alt="PESE Activity">
+      </div>
+        <div class="gallery-item">
+        <p>Group discussions</p>
+        <img src="picture5.jpg" alt="PESE Activity">
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  
+  <section id="activities">
+    <div class="section-card">
+      <h2>🎬 Extra-Curricular Activities</h2>
+      <p>
+        I believe that personal growth is not limited to academics and projects. Engaging in extracurricular activities has helped me maintain a balanced lifestyle, develop discipline, and enhance both physical and mental well-being. Here are some of the activities I actively pursue:
+      </p>
+      <ul>
+        <li><strong>Badminton:</strong> Improves agility, coordination, and teamwork skills through fast-paced gameplay.</li>
+        <li><strong>Volleyball:</strong> Encourages collaboration, communication, and builds physical endurance.</li>
+        <li><strong>Running:</strong> Enhances stamina, mental toughness, and stress relief through physical activity.</li>
+        <li><strong>Yoga:</strong> Builds focus, flexibility, mindfulness, and helps manage stress effectively.</li>
+        <li><strong>Gardening:</strong> Teaches patience, responsibility, and provides a calming mental break.</li>
+        <li><strong>Gym:</strong> Increases strength, discipline, and overall fitness for sustained energy and focus.</li>
+        <li><strong>Crochet:</strong> Boosts creativity, concentration, and offers a mindful and relaxing hobby.</li>
+      </ul>
+      <p>
+        These activities shape not only my well-being but also develop qualities such as persistence, teamwork, and time management that translate into my academic and professional life.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+  <div class="section-card">
+    <h2>⚡Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> C, C++, Python, Java, and JavaScript.</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS, and React.</li>
+      <li><strong>Database Technologies:</strong>MySQL.</li>
+      <li><strong>Tools & Platforms:</strong>MySQL Workbench, Microsoft Excel, and PowerPoint for data analysis and reporting.</li>
+      <li><strong>Soft Skills:</strong> Strong in critical thinking, analytical problem-solving, teamwork, and effective communication.</li>
+    </ul>
+  </div>
+  </section>
+
+
+  <section id="mantra">
+  <div class="section-card">
+    <h2>❄ My Mantras & Moods</h2>
+
+    <p><em>"Code with purpose, debug with patience, and learn with passion."</em></p>
+
+    <p><em>"Stay curious, stay kind, and never stop improving."</em></p>
+
+    <p><em>"Discipline turns dreams into reality."</em></p>
+
+    <h3 style="margin-top: 2rem;">🍀 Core Values & Keywords</h3>
+    <ul>
+      <li><strong>Creativity:</strong> I love building new things from scratch, whether it's code or crochet.</li>
+      <li><strong>Resilience:</strong> I don’t give up easily. I iterate, improve, and come back stronger.</li>
+      <li><strong>Curiosity:</strong> I explore new tech and ideas to understand how things work.</li>
+      <li><strong>Empathy:</strong> Whether working in teams or designing solutions, I value the human side of tech.</li>
+      <li><strong>Growth Mindset:</strong> I see every bug and every feedback as an opportunity to grow.</li>
+    </ul>
+
+    <h3 style="margin-top: 2rem;">💬 Personal Tagline</h3>
+    <p><strong>“Driven by curiosity,powered by code.”</strong></p>
+  </div>
+  </section>
+
+  <section id="fun-facts">
+  <div class="section-card">
+    <h2>✨Fun Facts & Personality Snapshot</h2>
+    <ul>
+      <li><strong>Favorite IDE:</strong> VS Code – clean, lightweight, and perfect for everything from Python to C++.</li>
+      <li><strong>First Programming Language:</strong> C – the foundation of my understanding of memory and systems.</li>
+      <li><strong>Most-used Linux Command:</strong> <code>grep</code> – because nothing hides from it!</li>
+      <li><strong>Tech Dream:</strong> Building a secure AI-integrated operating system for real-world sandboxing.</li>
+      <li><strong>Hobbies:</strong> Cooking, crochet, badminton, and tending to my garden on Sundays.</li>
+      <li><strong>Fun Fact:</strong> I once debugged a compiler bug faster than I could boil noodles.</li>
+    </ul>
+  </div>
+</section>
+  
+    <section id="interview">
+  <div class="section-card">
+    <h2>🪄 Interview Video</h2>
+    <p>
+      As part of our PESE lab activities, I conducted a recorded interview with my classmate <strong>Akanasha Digari</strong>. The goal was to practice effective communication, active listening, and interview skills in a professional yet friendly setting.
+    </p>
+    <p>
+      You can watch the interview here:  
+      <a href="https://drive.google.com/file/d/130BiqgHee00zk5teh9Yyh8dj_yfGg5IE/view?usp=drivesdk" target="_blank" style="color: var(--primary); font-weight: 600;">
+        ▶️ Watch Interview Video
+      </a>
+    </p>
+  </div>
+  </section>
+
+  <footer id="contact">
+  <h2 style="color: #000;">Contact Information</h2>
+  <p>Phone: <a href="tel:+917505933590">+91 75059 33590</a></p>
+  <p>Email: <a href="mailto:ankitanegi.724@gmail.com">ankitanegi.724@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ankita-negi-349a40365/" target="_blank">linkedin.com/in/ankita-negi</a></p>
+  <p>Resume: 
+    <a href="https://drive.google.com/file/d/19glEhl0Q18gGftW2mAGXErMSVub6fDb5/view?usp=drivesdk" target="_blank">
+      View My Resume (PDF)
+    </a>
+  </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top">⬆️</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  topBtn.style.display = document.documentElement.scrollTop > 300 ? "block" : "none";
+};
+
+function topFunction() {
+  document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
+
+</body>
+</html>
